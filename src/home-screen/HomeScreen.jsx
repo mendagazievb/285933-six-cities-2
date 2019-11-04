@@ -153,6 +153,10 @@ const HomeScreen = (props) => {
   );
 };
 
+HomeScreen.defaultProps = {
+  offers: [],
+};
+
 HomeScreen.propTypes = {
   offers: PropTypes.array,
 };
