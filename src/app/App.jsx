@@ -3,10 +3,13 @@ import PropTypes from 'prop-types';
 import HomeScreen from '../home-screen/HomeScreen';
 
 const App = (props) => {
-  const {offers} = props;
+  const {offers, clickHandler} = props;
 
   return (
-    <HomeScreen offers={offers} />
+    <HomeScreen
+      offers={offers}
+      clickHandler={clickHandler}
+    />
   );
 };
 
@@ -16,6 +19,7 @@ App.defaultProps = {
 
 App.propTypes = {
   offers: PropTypes.array,
+  clickHandler: PropTypes.func,
 };
 
 export default App;

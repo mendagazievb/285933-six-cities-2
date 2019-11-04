@@ -12,7 +12,14 @@ const init = () => {
     ],
   };
 
-  ReactDOM.render(<App offers={settings.offers} />, document.querySelector(`#root`));
+  const clickHandler = () => {};
+
+  ReactDOM.render(
+      <App
+        offers={settings.offers}
+        clickHandler={clickHandler}
+      />,
+      document.querySelector(`#root`));
 };
 
 init();

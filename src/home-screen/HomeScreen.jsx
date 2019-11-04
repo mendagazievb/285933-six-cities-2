@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const HomeScreen = (props) => {
-  const {offers} = props;
+  const {offers, clickHandler} = props;
 
   return (
     <div className="page page--gray page--main">
@@ -133,7 +133,7 @@ const HomeScreen = (props) => {
                           <span className="visually-hidden">Rating</span>
                         </div>
                       </div>
-                      <h2 className="place-card__name">
+                      <h2 className="place-card__name" onClick={clickHandler}>
                         <a href="#">{title}</a>
                       </h2>
                       <p className="place-card__type">Apartment</p>
@@ -159,6 +159,7 @@ HomeScreen.defaultProps = {
 
 HomeScreen.propTypes = {
   offers: PropTypes.array,
+  clickHandler: PropTypes.func,
 };
 
 export default HomeScreen;
