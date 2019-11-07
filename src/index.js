@@ -12,12 +12,9 @@ const init = () => {
     ],
   };
 
-  const clickHandler = () => {};
-
   ReactDOM.render(
       <App
         offers={settings.offers}
-        clickHandler={clickHandler}
       />,
       document.querySelector(`#root`));
 };
