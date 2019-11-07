@@ -155,6 +155,7 @@ const HomeScreen = (props) => {
 
 HomeScreen.defaultProps = {
   offers: [],
+  clickHandler: () => {},
 };
 
 HomeScreen.propTypes = {
