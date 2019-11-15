@@ -12,7 +12,11 @@ const init = () => {
     ],
   };
 
-  ReactDOM.render(<App offers={settings.offers} />, document.querySelector(`#root`));
+  ReactDOM.render(
+      <App
+        offers={settings.offers}
+      />,
+      document.querySelector(`#root`));
 };
 
 init();
