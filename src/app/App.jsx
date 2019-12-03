@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import HomeScreen from '../home-screen/HomeScreen';
+import {HomeScreen} from '../home-screen/HomeScreen';
 
-const App = (props) => {
+export const App = (props) => {
   const {offers} = props;
 
   return (
@@ -17,5 +17,3 @@ App.defaultProps = {
 App.propTypes = {
   offers: PropTypes.array,
 };
-
-export default App;
